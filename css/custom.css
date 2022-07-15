@@ -1,0 +1,51 @@
+.btn-food {
+  background-color: #d60664;
+  color: #ffff;
+  border-color: #d60665;
+  border-radius: 16px;
+  margin: 4px 2px;
+  padding: 5px 60px;
+  display: inline-block;
+}
+
+.btn-food:hover {
+  color: #fff;
+  background-color: #c2075b;
+  border-color: #a5064e;
+}
+
+.btn-food.focus,
+.btn-food:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.btn-food.disabled,
+.btn-food:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-food:not(:disabled):not(.disabled).active,
+.btn-food:not(:disabled):not(.disabled):active,
+.show > .btn-food.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+.btn-food:not(:disabled):not(.disabled).active:focus,
+.btn-food:not(:disabled):not(.disabled):active:focus,
+.show > .btn-food.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.modal-food {
+  width: 100%;
+  padding: 1 rem;
+}
+
+/** ADDED CODES FOR IMAGE PREVIEW IN ADMIN PAGE **/
+
+.image-container {
+  width: 50px;
+  height: 50px;
+  border: 2px;
+}

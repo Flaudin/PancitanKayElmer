@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--Admin Stylesheet-->
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="images/Flad Dev Logo.png">
+                    <h2>Admin<span class="primary">Page</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        chevron_left
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">restaurant_menu</span>
+                    <h3>Menu</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">web</span>
+                    <h3>Back to WebPage</h3>
+                </a>
+            </div>
+        </aside>
+        <!--End of Sidebar Content-->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="insights">
+                <div class="products">
+                    <span class="material-icons-sharp">dinner_dining</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Products</h3>
+                            <h1>18 Products listed.</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36' class="products"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>18%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Insights-->
+            <div class="product-list">
+                <h2>Product List(s)</h2>
+                <div class="add-card">
+                    <a href="#openmodal"><span class="material-icons-sharp">add_circle</span>
+                        <h3>Add new</h3>
+                    </a>
+                </div>
+                <div id="openmodal" class="modal-window">
+                    <h2>Add new Product</h2>
+                    <input type="file" id="product" name="products" accept="image/png, image/jpeg">
+                    <h3>Product Name</h3>
+                    <input type="text">
+                    <h3>Price</h3>
+                    <input type="text" placeholder="0.00">
+                    <button class="save">Save</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>
